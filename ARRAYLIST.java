@@ -37,10 +37,20 @@ public class ARRAYLIST {
         Scanner sc = new Scanner(System.in);
         ArrayList <String> arr = new ArrayList<>();
 
-        System.out.print("\nEnter the size of your ArrayList: ");
-        int n = sc.nextInt();
+        System.out.println("\nEnter the size of your ArrayList: ");
+        // =======================================
+        // two methods to take input:- 
 
-        System.out.print("\n\t---: Enter your Arraylist elements :---");
+        // int n = sc.nextInt();
+        // sc.nextLine();
+        
+                    // or 
+
+            int n = Integer.parseInt(sc.nextLine());
+
+        // =======================================
+
+        System.out.println("\n\t---: Enter your Arraylist elements :---");
         for(int i=0; i<n; i++){
 
             String temp = sc.nextLine();
